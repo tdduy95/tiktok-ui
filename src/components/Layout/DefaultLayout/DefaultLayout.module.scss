@@ -1,0 +1,16 @@
+.wrapper {
+    //hiển thị thùng chứa linh hoạt
+    display: flex; //cho phép sắp xếp phần tử con
+    flex-direction: column; //sắp xếp theo hướng chiều dọc
+    align-items: center; //căn chỉnh items ở giữa
+}
+
+.container {
+    width: var(--default-layput-width);
+    //min-height: 1000px; //chiều cao tối thiểu
+    display: flex;
+}
+
+.content {
+    flex: 1;
+}
