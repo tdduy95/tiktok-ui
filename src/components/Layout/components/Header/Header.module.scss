@@ -21,6 +21,11 @@
     justify-content: space-between;
 }
 
+.search,
+.search-result {
+    width: 361px;
+}
+
 .search {
     position: relative;
     width: 361px;
@@ -30,6 +35,7 @@
     background-color: rgba(22, 24, 35, 0.06);
     border-radius: var(--search-boder-radius);
     border: 1.5px solid transparent;
+    transition: border 0.3s; /* Thêm transition cho hiệu ứng mượt */
 
     input {
         flex: 1;
@@ -58,6 +64,19 @@
     &:focus-within {
         border-color: rgba(22, 24, 35, 0.2);
     }
+
+    &:hover,
+    &:focus {
+        /* Hiệu ứng khi focus */
+        border: 1.5px solid rgba(22, 24, 35, 0.2); /* Thay đổi màu viền khi focus */
+    }
+}
+
+.search-title {
+    padding: 5px 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
 }
 
 .clear,

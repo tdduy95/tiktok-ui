@@ -1,0 +1,53 @@
+.wrapper {
+    min-width: 100px;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+
+    + .wrapper {
+        margin-left: 8px;
+    }
+}
+//button types
+.primary {
+    // min-height: 36px;
+    // min-width: 100px;
+    color: var(--white);
+    background-color: var(--primary);
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), rgb(254, 44, 85);
+    }
+}
+
+.outline {
+    color: var(--primary);
+    border-color: currentColor;
+
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.08);
+    }
+}
+
+.text {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//dissable
+
+//button style
+.small {
+    min-width: 88px;
+    padding: 4px, 16px;
+}
+
+.large {
+    min-width: 139px;
+    padding: 14px 16px;
+}
